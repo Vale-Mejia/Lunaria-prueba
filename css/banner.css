@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   min-height: 100vh;
-  background: url(../imagenes/inicio/inicio-pantalla.png) no-repeat;
+  background: url(../imagenes/inicio/Inicio-pantalla.png) no-repeat;
   background-size: cover;
   background-position: center;
 }

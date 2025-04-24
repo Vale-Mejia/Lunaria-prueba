@@ -1,0 +1,219 @@
+/* Estilos para la sección de testimonios */
+.testimonios {
+  background: var(--background);
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.testimonios .titulo {
+  font-size: 3rem;
+  color: var(--text-dark);
+  margin-bottom: 3rem;
+}
+
+.contenedor-testimonios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card-testimonio {
+  background: var(--white);
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 30rem;
+  width: 100%;  /* Para evitar que se expanda demasiado */
+  transition: transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards;
+}
+
+.card-testimonio:hover {
+  transform: translateY(-5px);
+}
+
+.card-testimonio img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.card-testimonio p {
+  font-size: 1.5rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.card-testimonio span {
+  font-size: 1.4rem;
+  color: var(--text-dark);
+  font-weight: bold;
+}
+
+/* Estilos para la sección de servicios */
+#services {
+  background: var(--background);
+  padding: 4rem 9%;
+  text-align: center;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards;
+  width: 100%;  /* Aseguramos que las tarjetas no se expandan fuera de control */
+}
+
+.card:nth-child(1) { animation-delay: 0.2s; }
+.card:nth-child(2) { animation-delay: 0.4s; }
+.card:nth-child(3) { animation-delay: 0.6s; }
+.card:nth-child(4) { animation-delay: 0.8s; }
+.card:nth-child(5) { animation-delay: 1s; }
+
+.card i {
+  font-size: 3rem;
+  color: var(--main-color);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.card h4 {
+  font-size: 2rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1.4rem;
+  color: var(--text-dark);
+  text-align: justify;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--main-color);
+}
+
+.card:hover i {
+  transform: scale(1.2);
+}
+
+/* Estilos para la sección de categorías destacadas */
+.categorias-destacadas {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: var(--background);
+}
+
+.categorias-destacadas h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: var(--text-dark);
+}
+
+.contenedor-categorias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 2rem;
+}
+
+.categoria {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.categoria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.categoria span {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 0.8rem 1.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  color: var(--text-dark);
+  backdrop-filter: blur(5px);
+}
+
+.categoria:hover img {
+  transform: scale(1.05);
+}
+
+.categoria:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilos del overlay y botón "Ver más categorías" encima de cada imagen */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 1.5rem;
+}
+
+.categoria:hover .overlay {
+  opacity: 1;
+}
+
+.ver-mas {
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  color: var(--white);
+  background-color: var(--main-color);
+  border-radius: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ver-mas:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-5px);
+}
+
+/* Animación para entrada */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

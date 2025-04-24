@@ -1,0 +1,89 @@
+/* Estilos para el banner de la página de inicio */
+
+.inicio {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background: url(../imagenes/inicio/inicio-pantalla.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.inicio .contenido {
+  max-width: 50rem;
+  padding: 0 2rem;
+}
+
+.inicio .contenido h3 {
+  font-size: 6rem;
+  color: var(--text);
+}
+
+.inicio .contenido span {
+  font-size: 3.5rem;
+  color: var(--primary);
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+.inicio .contenido p {
+  font-size: 1.5rem;
+  color: var(--muted);
+  padding: 1rem 0;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+
+/*Estilos para el banner de promoción*/
+.banner-descuento {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url(../imagenes/inicio/banner-mama.png) no-repeat center/cover;
+  padding: 6rem 2rem;
+  text-align: center;
+  margin: 4rem 0;
+  border-radius: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenido-banner h2 {
+  font-size: 4rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.contenido-banner p {
+  font-size: 2rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.contenido-banner .boton {
+  background-color: var(--main-color);
+  color: var(--white);
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.contenido-banner .boton:hover {
+  background-color: var(--hover-color);
+}
+
+.contenido-banner h2 {
+  font-size: 2.5rem;
+}
+
+.contenido-banner p {
+  font-size: 1.4rem;
+}
+
+.contenido-banner .boton {
+  font-size: 1.3rem;
+  padding: 0.7rem 2rem;
+}

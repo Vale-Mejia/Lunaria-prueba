@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunaria</title>
+  <link rel="stylesheet" href="./css/global-styles.css">
+  <link rel="stylesheet" href="./css/headers.css">
+  <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <input type="checkbox" name="" id="menu-bar">
+    <label for="menu-bar" class="fas fa-bars"></label>
+
+    <div class="logo">
+      <img src="imagenes/inicio/logo.png" alt="Lunaria Logo">
+    </div>
+
+    <nav class="encabezado">
+      <a href="index.html">Inicio</a>
+      <a href="./quienes-somos.html">Sobre nosotros</a>
+
+      <div class="productos">
+        <a href="#">Productos <i class="fas fa-chevron-down"></i></a>
+        <div class="dropdown">
+          <a href="./productos/camisas.html">Camisas</a>
+          <a href="./productos/faldas.html">Faldas</a>
+          <a href="./productos/pantalones.html">Pantalones</a>
+          <a href="./productos/ropa-de-noche.html">Ropa de Noche</a>
+          <a href="./productos/ropa-de-trabajo.html">Ropa de Trabajo</a>
+        </div>
+      </div>
+
+      <a href="./guia-de-tallas.html">Guia de tallas</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="inicio" id="inicio">
+      <div class="contenido">
+        <h3>Bienvenidos a Lunaria</h3>
+        <span>Bella y Moda al Instante</span>
+        <p>Estamos listos para ofrecerte lo mejor en moda. Conoce nuestros productos y descubre la magia de Lunaria.</p>
+        <a href="#categorias" class="boton">Ver más...</a>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="card-container">
+        <div class="card">
+          <i class="fa fa-truck"></i>
+          <h4>Envío gratuito a nivel mundial</h4>
+          <p>En pedidos superiores a $1500. ¡Compra desde cualquier lugar y recibe tu pedido sin cargos adicionales!</p>
+        </div>
+        <div class="card">
+          <i class="fa fa-credit-card"></i>
+          <h4>Paga de manera segura</h4>
+          <p>Aceptamos múltiples métodos de pago, incluyendo tarjetas de crédito y débito, para tu comodidad y
+            seguridad.</p>
+        </div>
+        <div class="card">
+          <i class="fa fa-check-circle"></i>
+          <h4>Garantía de satisfacción</h4>
+          <p>Si no estás completamente satisfecha con tu compra, trabajaremos para resolver cualquier inconveniente de
+            manera rápida y eficiente.</p>
+        </div>
+        <div class="card">
+          <i class="fa fa-gift"></i>
+          <h4>Tarjeta regalo especial</h4>
+          <p>Regala una tarjeta con bonos especiales para que tus seres queridos elijan lo que más les guste de nuestra
+            tienda.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner-descuento">
+      <div class="contenido-banner">
+        <h2>🌸 30% de Descuento 🌸</h2>
+        <p>En toda la tienda por el Día de la Madre</p>
+        <a href="ofertas.html" class="boton">Ver promociones</a>
+      </div>
+    </section>
+    <section class="categorias-destacadas" id="categorias">
+      <h2>Categorías destacadas</h2>
+      <div class="contenedor-categorias">
+        <a href="colecciones/mujer.html" class="categoria">
+          <img src="imagenes/categorias/mujer.png" alt="Colección Femenina">
+          <span>👗 Colección Femenina</span>
+          <div class="overlay">
+            <span class="ver-mas">Ver más</span>
+          </div>
+        </a>
+        <a href="colecciones/hombre.html" class="categoria">
+          <img src="imagenes/categorias/hombre.jpg" alt="Colección Masculina">
+          <span>👔 Colección Masculina</span>
+          <div class="overlay">
+            <span class="ver-mas">Ver más</span>
+          </div>
+        </a>
+        <a href="colecciones/accesorios.html" class="categoria">
+          <img src="imagenes/categorias/accesorios.jpg" alt="Accesorios">
+          <span>👜 Accesorios</span>
+          <div class="overlay">
+            <span class="ver-mas">Ver más</span>
+          </div>
+        </a>
+        <a href="colecciones/colecciones.html" class="categoria">
+          <img src="imagenes/categorias/nuevas-colecciones.jpg" alt="Nuevas Colecciones">
+          <span>✨ Nuevas colecciones</span>
+          <div class="overlay">
+            <span class="ver-mas">Ver más</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="testimonios" id="review">
+      <h2 class="titulo">Lo que dicen nuestras clientas</h2>
+      <div class="contenedor-testimonios">
+        <div class="card-testimonio">
+          <img src="./imagenes/clientes/ana.jpg" alt="Ana" loading="lazy" />
+          <p>"La calidad es increíble, amé mi pedido."</p>
+          <span>- Ana</span>
+        </div>
+        <div class="card-testimonio">
+          <img src="./imagenes/clientes/lucia.jpg" alt="Lucía" loading="lazy" />
+          <p>"Llegó rapidísimo y todo súper bonito. 10/10!"</p>
+          <span>- Lucía</span>
+        </div>
+        <div class="card-testimonio">
+          <img src="./imagenes/clientes/valeria.jpg" alt="Valeria" loading="lazy" />
+          <p>"La atención fue excelente. Definitivamente volveré."</p>
+          <span>- Valeria</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Lunaria</h3>
+        <p>En Lunaria, ofrecemos ropa elegante y única que te hará brillar en cualquier ocasión.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contáctanos</h4>
+        <p>📍 Lerma, Estado de México</p>
+        <p>📞729 180 9379</p>
+        <p>📧 ventas@lunaria.com</p>
+      </div>
+      <div class="footer-col">
+        <h4>Síguenos</h4>
+        <div class="social-icons">
+          <a href="https://facebook.com/lunaria" target="_blank"><img src="./imagenes/iconos/facebook.webp" alt="Facebook"></a>
+          <a href="https://www.instagram.com/lunariar_ropa/" target="_blank"><img src="./imagenes/iconos/instagram.png" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Lunaria. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

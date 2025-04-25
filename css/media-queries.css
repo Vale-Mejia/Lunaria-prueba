@@ -86,6 +86,28 @@
     flex-direction: column;
     gap: 1rem;
   }
+  /* Hacer que .dropdown esté oculto por defecto */
+  nav .productos .dropdown {
+    display: none;
+    flex-direction: column;
+    background: var(--background);
+    padding: 0;
+    margin-top: 0.5rem;
+    position: static;
+    box-shadow: none;
+    border: none;
+  }
+
+  /* Al enfocar (tocar) Productos, mostrar el dropdown */
+  nav .productos:focus-within .dropdown {
+    display: flex !important;
+  }
+
+  /* Links en columna con separación */
+  nav .productos .dropdown a {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
 }
 
 /* Estilos para el diseño de moviles pequeños*/
@@ -114,8 +136,29 @@
   .card-container {
     grid-template-columns: 1fr;
   }
-}
+  /* Hacer que .dropdown esté oculto por defecto */
+  nav .productos .dropdown {
+    display: none;
+    flex-direction: column;
+    background: var(--background);
+    padding: 0;
+    margin-top: 0.5rem;
+    position: static;
+    box-shadow: none;
+    border: none;
+  }
 
+  /* Al enfocar (tocar) Productos, mostrar el dropdown */
+  nav .productos:focus-within .dropdown {
+    display: flex !important;
+  }
+
+  /* Links en columna con separación */
+  nav .productos .dropdown a {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
 
 @media (max-width: 900px) {
   .historia {

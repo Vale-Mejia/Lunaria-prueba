@@ -1,7 +1,7 @@
-/* Contenedor general de productos (puedes ajustar según tu diseño) */
+
 .seccion-productos {
     padding: 6rem 10%;
-    margin-top: 80px; /* espacio por el menú */
+    margin-top: 80px; 
     text-align: center;
   }
   
@@ -24,7 +24,7 @@
     border-radius: 2px;
   }
   
-  /* Contenedor de cards */
+
   .productos-grid {
     display: flex;
     flex-wrap: wrap;
@@ -32,7 +32,6 @@
     justify-content: center;
   }
   
-  /* Card con efecto flip */
   .producto-card-flip {
     perspective: 1000px;
     width: 260px;
@@ -66,7 +65,6 @@
     justify-content: center;
   }
   
-  /* Parte frontal */
   .card-front img {
     width: 100%;
     border-radius: 0.5rem;
@@ -85,7 +83,6 @@
     font-weight: bold;
   }
   
-  /* Parte trasera */
   .card-back {
     transform: rotateY(180deg);
     text-align: center;

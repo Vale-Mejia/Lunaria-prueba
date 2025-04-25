@@ -1,4 +1,4 @@
-/* Estilos para la sección de testimonios */
+
 .testimonios {
   background: var(--background);
   padding: 5rem 2rem;
@@ -24,7 +24,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 2rem;
   max-width: 30rem;
-  width: 100%;  /* Para evitar que se expanda demasiado */
+  width: 100%; 
   transition: transform 0.3s ease;
   opacity: 0;
   transform: translateY(20px);
@@ -117,7 +117,7 @@
   transform: scale(1.2);
 }
 
-/* Estilos para la sección de categorías destacadas */
+
 .categorias-destacadas {
   text-align: center;
   padding: 4rem 2rem;
@@ -174,7 +174,6 @@
   transform: translateY(-5px);
 }
 
-/* Estilos del overlay y botón "Ver más categorías" encima de cada imagen */
 .overlay {
   position: absolute;
   top: 0;
@@ -210,10 +209,3 @@
   transform: translateY(-5px);
 }
 
-/* Animación para entrada */
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}

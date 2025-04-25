@@ -1,4 +1,4 @@
-/* Sección Nosotros */
+
 #nosotros {
   padding: 6rem 10%;
   margin-top: 80px;
@@ -59,7 +59,7 @@
 .historia-video {
   position: relative;
   width: 100%;
-  padding-bottom: 30%; /* Proporción 16:9 */
+  padding-bottom: 30%; 
   height: 0;
   overflow: hidden;
   border-radius: 1rem;
@@ -125,9 +125,8 @@
   margin-bottom: 0.5rem;
 }
 
-/* Reconocimientos o Premios */
 .premios {
-  padding: 5rem 10%;
+  padding: 0rem 10%;
   background-color: var(--background);
   text-align: center;
   animation: fadeIn 1.2s ease-in-out;
@@ -171,41 +170,6 @@
   color: var(--text-dark);
 }
 
-/* Galería de Productos Destacados */
-.productos-destacados {
-  padding: 5rem 10%;
-  background-color: var(--white);
-  text-align: center;
-  animation: fadeIn 1.2s ease-in-out;
-}
-
-.productos-destacados h2 {
-  font-size: 2.5rem;
-  color: var(--main-color);
-  margin-bottom: 2.5rem;
-  font-family: "Russo One", sans-serif;
-}
-
-.galeria-productos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.galeria-productos img {
-  max-width: 300px;
-  width: 100%;
-  border-radius: 1rem;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.galeria-productos img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
-}
-/* Sostenibilidad y Responsabilidad Social */
 .sostenibilidad {
   padding: 5rem 10%;
   background-color: var(--background);
@@ -227,38 +191,4 @@
   max-width: 800px;
   margin: 0 auto;
   text-align: justify;
-}
-
-/* Animaciones suaves */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }

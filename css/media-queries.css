@@ -1,4 +1,3 @@
-/* Estilos para el diseño en tabletas */
 
 @media (max-width: 1024px) {
   html {
@@ -22,9 +21,25 @@
   .inicio .contenido span {
     font-size: 3rem;
   }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-col {
+    width: 100%;
+    max-width: 500px;
+    flex: 1 0 40px;
+  }
+
+  .footer-links li {
+    margin-bottom: 1rem;
+  }
 }
 
-/* Estilos para móviles grandes*/
+
 @media (max-width: 768px) {
   header .fa-bars {
     display: block;
@@ -59,9 +74,11 @@
   .inicio .contenido span {
     font-size: 2.5rem;
   }
+
   .card-container {
     grid-template-columns: 1fr 1fr;
   }
+
   .contenido-banner h2 {
     font-size: 3rem;
   }
@@ -74,19 +91,31 @@
     font-size: 1.4rem;
     padding: 0.8rem 2.5rem;
   }
+
   .footer-container {
     flex-direction: column;
     text-align: center;
+    align-items: center;
+  }
+
+  .footer-col {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .footer-links li {
+    margin-bottom: 1rem;
   }
 
   .social-icons {
     justify-content: center;
   }
+
   .historia-contenedor {
     flex-direction: column;
     gap: 1rem;
   }
-  /* Hacer que .dropdown esté oculto por defecto */
+
   nav .productos .dropdown {
     display: none;
     flex-direction: column;
@@ -98,19 +127,24 @@
     border: none;
   }
 
-  /* Al enfocar (tocar) Productos, mostrar el dropdown */
   nav .productos:focus-within .dropdown {
     display: flex !important;
   }
 
-  /* Links en columna con separación */
   nav .productos .dropdown a {
     padding: 1rem 1.5rem;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
+
+  .faq-container {
+    flex-direction: column;
 }
 
-/* Estilos para el diseño de moviles pequeños*/
+.faq {
+    flex: 1 1 100%;
+}
+}
+
 @media (max-width: 450px) {
   html {
     font-size: 50%;
@@ -133,10 +167,31 @@
   .inicio .contenido p {
     font-size: 1.3rem;
   }
+
   .card-container {
     grid-template-columns: 1fr;
   }
-  /* Hacer que .dropdown esté oculto por defecto */
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .footer-col {
+    width: 100%;
+    max-width: 100%;
+    flex: 1 0 40px;
+  }
+
+  .footer-links li {
+    margin-bottom: 1rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
   nav .productos .dropdown {
     display: none;
     flex-direction: column;
@@ -148,17 +203,16 @@
     border: none;
   }
 
-  /* Al enfocar (tocar) Productos, mostrar el dropdown */
   nav .productos:focus-within .dropdown {
     display: flex !important;
   }
 
-  /* Links en columna con separación */
   nav .productos .dropdown a {
     padding: 1rem 1.5rem;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
+
 
 @media (max-width: 900px) {
   .historia {
@@ -174,7 +228,8 @@
   .bloque {
     width: 100%;
   }
-  .historia-video{
+
+  .historia-video {
     width: 100%;
     padding-bottom: 56.25%;
   }

@@ -143,3 +143,35 @@ nav .productos .dropdown a:hover {
   background-color: var(--main-color);
   color: white;
 }
+
+
+.footer-payment {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.footer-payment h4 {
+  color: var(--main-color);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.payment-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.payment-icons li img {
+  width: 45px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.payment-icons li img:hover {
+  transform: scale(1.1);
+}

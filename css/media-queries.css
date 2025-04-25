@@ -1,4 +1,3 @@
-
 @media (max-width: 1024px) {
   html {
     font-size: 55%;
@@ -37,8 +36,19 @@
   .footer-links li {
     margin-bottom: 1rem;
   }
-}
+  .footer-payment h4 {
+    font-size: 1.6rem;
+  }
 
+  .payment-icons {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .payment-icons li img {
+    width: 40px;
+  }
+}
 
 @media (max-width: 768px) {
   header .fa-bars {
@@ -138,11 +148,27 @@
 
   .faq-container {
     flex-direction: column;
-}
+  }
 
-.faq {
+  .faq {
     flex: 1 1 100%;
-}
+  }
+  .footer-payment h4 {
+    font-size: 1.5rem;
+  }
+
+  .payment-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .payment-icons li {
+    margin: 0.5rem;
+  }
+
+  .payment-icons li img {
+    width: 35px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -175,7 +201,6 @@
   .footer-container {
     flex-direction: column;
     align-items: center;
-
   }
 
   .footer-col {
@@ -211,8 +236,18 @@
     padding: 1rem 1.5rem;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
-}
+  .footer-payment h4 {
+    font-size: 1.4rem;
+  }
 
+  .payment-icons {
+    gap: 1rem;
+  }
+
+  .payment-icons li img {
+    width: 30px;
+  }
+}
 
 @media (max-width: 900px) {
   .historia {

@@ -168,9 +168,14 @@
   .bloques {
     flex-direction: column;
     align-items: center;
+    flex-wrap: nowrap;
   }
 
   .bloque {
     width: 100%;
+  }
+  .historia-video{
+    width: 100%;
+    padding-bottom: 56.25%;
   }
 }

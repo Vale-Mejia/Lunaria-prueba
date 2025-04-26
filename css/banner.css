@@ -7,16 +7,21 @@
   background: url(../imagenes/inicio/Inicio-pantalla.png) no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  
 }
 
 .inicio .contenido {
   max-width: 50rem;
   padding: 0 2rem;
+  animation: fadeSlide 1.5s ease-out;
+
 }
 
 .inicio .contenido h3 {
   font-size: 6rem;
   color: var(--text);
+  animation: fadeSlide 1.2s ease-out 0.3s both;
 }
 
 .inicio .contenido span {
@@ -72,6 +77,7 @@
   text-decoration: none;
   transition: background 0.3s ease, transform 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  animation: bounce 2s infinite ease-in-out;
 }
 
 .contenido-banner .boton:hover {
@@ -88,4 +94,21 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
 }

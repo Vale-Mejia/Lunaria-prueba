@@ -24,7 +24,15 @@ header .logo img {
 header .encabezado a {
   font-size: 2rem;
   padding: 0 1.5rem;
-  color: var(--muted);
+  color: var(--surface);
+  border-radius: 1.5rem;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: .5rem;
+
 }
 
 header .encabezado a:hover {

@@ -3,6 +3,7 @@
   background: var(--background);
   padding: 5rem 2rem;
   text-align: center;
+  background: linear-gradient(to bottom, var(--background), #fefaf5);
 }
 
 .testimonios .titulo {
@@ -55,6 +56,12 @@
   font-weight: bold;
 }
 
+.card-testimonio:nth-child(1) { animation-delay: 0.2s; }
+.card-testimonio:nth-child(2) { animation-delay: 0.4s; }
+.card-testimonio:nth-child(3) { animation-delay: 0.6s; }
+.card-testimonio:nth-child(4) { animation-delay: 0.8s; }
+
+
 /* Estilos para la sección de servicios */
 #services {
   background: var(--background);
@@ -66,9 +73,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-}
-
-.card {
+}.card {
   background: var(--white);
   padding: 2rem;
   border-radius: 10px;
@@ -76,17 +81,21 @@
   text-align: center;
   transition: all 0.3s ease;
   position: relative;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.6s forwards;
+  opacity: 1; /* Hacemos que la tarjeta esté visible desde el inicio */
+  transform: rotate(0deg) translateY(0); /* El estado inicial sin movimiento */
   width: 100%;  /* Aseguramos que las tarjetas no se expandan fuera de control */
 }
+
+
+
 
 .card:nth-child(1) { animation-delay: 0.2s; }
 .card:nth-child(2) { animation-delay: 0.4s; }
 .card:nth-child(3) { animation-delay: 0.6s; }
 .card:nth-child(4) { animation-delay: 0.8s; }
 .card:nth-child(5) { animation-delay: 1s; }
+
+
 
 .card i {
   font-size: 3rem;
@@ -108,9 +117,10 @@
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: rotate(10deg) translateY(-10px); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   border: 1px solid var(--main-color);
+
 }
 
 .card:hover i {
@@ -141,8 +151,10 @@
   overflow: hidden;
   border-radius: 1.5rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
   text-decoration: none;
+  transform: scale(1);
+
 }
 
 .categoria img {
@@ -171,7 +183,8 @@
 }
 
 .categoria:hover {
-  transform: translateY(-5px);
+  transform: scale(1.05);
+
 }
 
 .overlay {
